@@ -1,2 +1,2 @@
 # bff-monorepo-template
-BFF monorepo template (NestJS, GRPC, GraphQL, PrismaJS)
+BFF monorepo template (PNPM, NestJS, GRPC, GraphQL, PrismaJS)
