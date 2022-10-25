@@ -1,0 +1,71 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+input DeleteUserArgs {
+  ids: [String!] = []
+}
+
+type ErrorResponse {
+  message: String!
+}
+
+type GetUserResponse {
+  data: [UserOutput!]
+  errors: [ErrorResponse!]
+  success: Boolean
+}
+
+type Mutation {
+  deleteUser(deleteUserArgs: DeleteUserArgs!): SuccessResponse!
+  deleteUserGrpc(deleteUserArgs: DeleteUserArgs!): SuccessResponse!
+  putUser(putUserArgs: PutUserArgs!): GetUserResponse!
+  putUserGrpc(putUserArgs: PutUserArgs!): GetUserResponse!
+}
+
+input PutUserArgs {
+  email: String = ""
+  hobby: String = ""
+  id: String = ""
+  phoneNumber: String = ""
+  skillsets: [String!] = []
+  username: String = ""
+}
+
+type Query {
+  getUser(createdAt: String, email: String, hobby: String = "", id: String = "", phoneNumber: String = "", skillsets: [String!] = [], updatedAt: String, username: String = ""): GetUserResponse!
+  getUserGrpc(createdAt: String, email: String, hobby: String = "", id: String = "", phoneNumber: String = "", skillsets: [String!] = [], updatedAt: String, username: String = ""): GetUserResponse!
+}
+
+type SuccessResponse {
+  data: String!
+  errors: [ErrorResponse!]
+  success: Boolean!
+}
+
+type UserGrpc {
+  createdAt: DateTime
+  email: String
+  hobby: String
+  id: String
+  phoneNumber: String
+  skillsets: [String!]
+  updatedAt: DateTime
+  username: String
+}
+
+type UserOutput {
+  createdAt: DateTime
+  email: String
+  hobby: String
+  id: String
+  phoneNumber: String
+  skillsets: [String!]
+  updatedAt: DateTime
+  username: String
+}
