@@ -16,7 +16,7 @@ Run `pnpm --workspace @adamjanin/bff add graphql` (Add `-D` after _add_ for devD
 
 ## How to build all packages
 
-Run `pnpm --stream -r run build`
+Run `pnpm --stream -r build`
 
 ## How to start all packages
 
