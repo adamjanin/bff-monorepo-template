@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "config:base",
+    "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "packageNames": ["node"],
+      "major": {
+        "enabled": true
+      },
+      "separateMultipleMajor": true,
+      "allowedVersions": "^16 || ^18"
+    }
+  ],
+  "prHourlyLimit": 10
+}
