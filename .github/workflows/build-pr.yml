@@ -36,5 +36,5 @@ jobs:
       - name: Lint
         run: pnpm --parallel -r lint
       - name: Build
-        run: pnpm --stream -r run build
+        run: pnpm --stream -r build
       - run: echo "This job's status is ${{ job.status }}."

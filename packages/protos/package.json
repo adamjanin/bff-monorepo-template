@@ -1,0 +1,22 @@
+{
+  "name": "@adamjanin/protos",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "homepage": "https://github.com/adamjanin/bff-monorepo-template#readme",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": "git+https://github.com/adamjanin/bff-monorepo-template.git",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "rm -rf dist && proto-loader-gen-types --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --outDir=dist/ src/*.proto"
+  },
+  "bugs": {
+    "url": "https://github.com/adamjanin/bff-monorepo-template/issues"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "1.7.3",
+    "@grpc/proto-loader": "0.7.3",
+    "google-protobuf": "3.21.2"
+  }
+}
