@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package adamjanin;
+
+import "google/protobuf/empty.proto";
+
+service UsersApi {
+  rpc putUser(User) returns (UserResponse) {}
+  rpc getUser(User) returns (UserResponse) {}
+  rpc deleteUser(DeleteUserRequest) returns (DeleteUserResponse) {}
+}
+
+message Error { required string message = 1; }
+
+message User {
+  string id = 1;
+  string username = 2;
+  string phoneNumber = 3;
+  string email = 4;
+  string hobby = 5;
+  repeated string skillsets = 6;
+  string createdAt = 7;
+  string updatedAt = 8;
+}
+
+message DeleteUserRequest {
+  repeated string ids = 1;
+}
+
+message UserResponse {
+  repeated User data = 1;
+  required bool success = 2;
+  repeated Error errors = 3;
+}
+
+message DeleteUserResponse {
+  required string data = 1;
+  required bool success = 2;
+  repeated Error errors = 3;
+}
