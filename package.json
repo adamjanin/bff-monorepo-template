@@ -1,0 +1,7 @@
+{
+  "name": "angular-graphql-monorepo",
+  "private": true,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
