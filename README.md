@@ -1,3 +1,6 @@
+<a href="https://www.codefactor.io/repository/github/adamjanin/bff-monorepo-template"><img src="https://www.codefactor.io/repository/github/adamjanin/bff-monorepo-template/badge" alt="CodeFactor" /></a>
+<a href="https://www.codacy.com/gh/adamjanin/bff-monorepo-template/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=adamjanin/bff-monorepo-template&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/6a691d3adbaf4b218e25db25deb9fabd"/></a>
+
 # bff-monorepo-template
 BFF monorepo template (PNPM, NestJS, GRPC, GraphQL, PrismaJS)
 
