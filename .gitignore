@@ -5,3 +5,4 @@ dist
 .env
 infrastructure
 pnpm-lock.yaml
+.DS_Store
